@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator functional</title>
+    <style>
+
+    </style>
+</head>
+</head>
+
+<body>
+    <h1>First H1</h1>
+    <h1>Second H1</h1>
+    <h3>First H3</h3>
+    <h3>Second H3</h3>
+    <h5>First H5</h5>
+    <h5>Second H5</h5>
+    <h5>Third H5</h5>
+    <div class="green">First DIV</div>
+    <div class="red">Second DIV</div>
+    <div class="blue">Third DIV</div>
+    <p class="green">First P</p>
+    <p class="red">Second P</p>
+    <p class="blue">Third P</p>
+    <hr/>
+    <button>Change H1</button>
+    <button>Change H3</button>
+    <button>Change H5</button>
+    <button>Change Green</button>
+    <button>Change Red</button>
+    <button>Change Blue</button>
+
+
+</body>
+
+<script>
+    var keys = document.querySelectorAll("#keyboard>div");
+    console.log(keys);
+
+    //also can use foreach 
+
+
+    for (var i = 0; i < keys.length; i++) {
+        key[i].addEventListener("click", myCalculator)
+
+    }
+
+    function myCalculator() {
+        console.log('clicke any btn')
+    }
+</script>
+
+</html>

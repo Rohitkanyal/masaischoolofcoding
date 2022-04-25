@@ -1,0 +1,1453 @@
+<html>
+
+<head>
+    <title>Time-Table</title>
+    <style>
+        #container {
+            border: 2px;
+            height: 500px;
+            width: 600px;
+            /* display: flex; */
+            box-shadow: 2px;
+        }
+        
+        * {
+            margin: auto;
+            padding: auto;
+        }
+        
+        .time {
+            text-align: center;
+            text-shadow: 2px;
+            text-emphasis-color: red;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style: initial;
+            font-size: large;
+        }
+        
+        h1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif0;
+            font-display: red;
+            padding-bottom: 20px;
+        }
+        
+        p {
+            padding-bottom: 15px;
+        }
+        
+        .scroll {}
+    </style>
+</head>
+
+<body>
+    <div class="time">
+        <h1>Time-Table</h1>
+        <p>Here I Create my time-table of masai shcool of coding for unit-2 </p>
+    </div>
+    <div class="time">
+        <h2>Monday</h2>
+        <input type="text">
+        <div class="scroll">
+            <section id="app">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="comment">
+                                <p v-for="items in item" v-text="items"></p>
+                            </div>
+                            <!--End Comment-->
+                        </div>
+                        <!--End col -->
+                    </div>
+                    <!-- End row -->
+                    <div class="row">
+                        <div class="col-6">
+                            <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                            <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                        </div>
+                        <!-- End col -->
+                    </div>
+                    <!--End Row -->
+                </div>
+                <!--End Container -->
+            </section>
+            <!-- end App -->
+        </div>
+        <div>Scrum</div>
+        <div class="scroll">
+            <section id="app">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="comment">
+                                <p v-for="items in item" v-text="items"></p>
+                            </div>
+                            <!--End Comment-->
+                        </div>
+                        <!--End col -->
+                    </div>
+                    <!-- End row -->
+                    <div class="row">
+                        <div class="col-6">
+                            <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                            <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                        </div>
+                        <!-- End col -->
+                    </div>
+                    <!--End Row -->
+                </div>
+                <!--End Container -->
+            </section>
+            <!-- end App -->
+        </div>
+        <div>DSA</div>
+        <input type="text">
+        <div class="scroll">
+            <section id="app">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="comment">
+                                <p v-for="items in item" v-text="items"></p>
+                            </div>
+                            <!--End Comment-->
+                        </div>
+                        <!--End col -->
+                    </div>
+                    <!-- End row -->
+                    <div class="row">
+                        <div class="col-6">
+                            <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                            <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                        </div>
+                        <!-- End col -->
+                    </div>
+                    <!--End Row -->
+                </div>
+                <!--End Container -->
+            </section>
+            <!-- end App -->
+        </div>
+        <div>Skillathon</div>
+        <input type="text">
+        <div class="scroll">
+            <section id="app">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="comment">
+                                <p v-for="items in item" v-text="items"></p>
+                            </div>
+                            <!--End Comment-->
+                        </div>
+                        <!--End col -->
+                    </div>
+                    <!-- End row -->
+                    <div class="row">
+                        <div class="col-6">
+                            <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                            <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                        </div>
+                        <!-- End col -->
+                    </div>
+                    <!--End Row -->
+                </div>
+                <!--End Container -->
+            </section>
+            <!-- end App -->
+        </div>
+        <div>Html-css</div>
+        <input type="text">
+        <div class="scroll">
+            <section id="app">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="comment">
+                                <p v-for="items in item" v-text="items"></p>
+                            </div>
+                            <!--End Comment-->
+                        </div>
+                        <!--End col -->
+                    </div>
+                    <!-- End row -->
+                    <div class="row">
+                        <div class="col-6">
+                            <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                            <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                        </div>
+                        <!-- End col -->
+                    </div>
+                    <!--End Row -->
+                </div>
+                <!--End Container -->
+            </section>
+            <!-- end App -->
+        </div>
+        <div>External</div>
+        <input type="text">
+        <div class="scroll">
+            <section id="app">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="comment">
+                                <p v-for="items in item" v-text="items"></p>
+                            </div>
+                            <!--End Comment-->
+                        </div>
+                        <!--End col -->
+                    </div>
+                    <!-- End row -->
+                    <div class="row">
+                        <div class="col-6">
+                            <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                            <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                        </div>
+                        <!-- End col -->
+                    </div>
+                    <!--End Row -->
+                </div>
+                <!--End Container -->
+            </section>
+            <!-- end App -->
+        </div>
+        <div>Stand-ups</div>
+        <input type="text">
+        <div class="scroll">
+            <section id="app">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="comment">
+                                <p v-for="items in item" v-text="items"></p>
+                            </div>
+                            <!--End Comment-->
+                        </div>
+                        <!--End col -->
+                    </div>
+                    <!-- End row -->
+                    <div class="row">
+                        <div class="col-6">
+                            <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                            <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                        </div>
+                        <!-- End col -->
+                    </div>
+                    <!--End Row -->
+                </div>
+                <!--End Container -->
+            </section>
+            <!-- end App -->
+        </div>
+    </div>
+    <br>
+    <hr size="5px" color="blue">
+    <br>
+    <div class="time">
+        <div>
+            <h2> Tuesday</h2>
+            <input type="text">
+            <div class="scroll">
+                <section id="app">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="comment">
+                                    <p v-for="items in item" v-text="items"></p>
+                                </div>
+                                <!--End Comment-->
+                            </div>
+                            <!--End col -->
+                        </div>
+                        <!-- End row -->
+                        <div class="row">
+                            <div class="col-6">
+                                <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                                <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                            </div>
+                            <!-- End col -->
+                        </div>
+                        <!--End Row -->
+                    </div>
+                    <!--End Container -->
+                </section>
+                <!-- end App -->
+            </div>
+            <div>Scrum</div>
+            <div class="scroll">
+                <section id="app">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="comment">
+                                    <p v-for="items in item" v-text="items"></p>
+                                </div>
+                                <!--End Comment-->
+                            </div>
+                            <!--End col -->
+                        </div>
+                        <!-- End row -->
+                        <div class="row">
+                            <div class="col-6">
+                                <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                                <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                            </div>
+                            <!-- End col -->
+                        </div>
+                        <!--End Row -->
+                    </div>
+                    <!--End Container -->
+                </section>
+                <!-- end App -->
+            </div>
+            <div>DSA</div>
+            <input type="text">
+            <div class="scroll">
+                <section id="app">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="comment">
+                                    <p v-for="items in item" v-text="items"></p>
+                                </div>
+                                <!--End Comment-->
+                            </div>
+                            <!--End col -->
+                        </div>
+                        <!-- End row -->
+                        <div class="row">
+                            <div class="col-6">
+                                <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                                <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                            </div>
+                            <!-- End col -->
+                        </div>
+                        <!--End Row -->
+                    </div>
+                    <!--End Container -->
+                </section>
+                <!-- end App -->
+            </div>
+            <div>Skillathon</div>
+            <input type="text">
+            <div class="scroll">
+                <section id="app">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="comment">
+                                    <p v-for="items in item" v-text="items"></p>
+                                </div>
+                                <!--End Comment-->
+                            </div>
+                            <!--End col -->
+                        </div>
+                        <!-- End row -->
+                        <div class="row">
+                            <div class="col-6">
+                                <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                                <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                            </div>
+                            <!-- End col -->
+                        </div>
+                        <!--End Row -->
+                    </div>
+                    <!--End Container -->
+                </section>
+                <!-- end App -->
+            </div>
+            <div>Html-css</div>
+            <input type="text">
+            <div class="scroll">
+                <section id="app">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="comment">
+                                    <p v-for="items in item" v-text="items"></p>
+                                </div>
+                                <!--End Comment-->
+                            </div>
+                            <!--End col -->
+                        </div>
+                        <!-- End row -->
+                        <div class="row">
+                            <div class="col-6">
+                                <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                                <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                            </div>
+                            <!-- End col -->
+                        </div>
+                        <!--End Row -->
+                    </div>
+                    <!--End Container -->
+                </section>
+                <!-- end App -->
+            </div>
+            <div>External</div>
+            <input type="text">
+            <div class="scroll">
+                <section id="app">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="comment">
+                                    <p v-for="items in item" v-text="items"></p>
+                                </div>
+                                <!--End Comment-->
+                            </div>
+                            <!--End col -->
+                        </div>
+                        <!-- End row -->
+                        <div class="row">
+                            <div class="col-6">
+                                <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                                <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                            </div>
+                            <!-- End col -->
+                        </div>
+                        <!--End Row -->
+                    </div>
+                    <!--End Container -->
+                </section>
+                <!-- end App -->
+            </div>
+            <div>Stand-ups</div>
+            <input type="text">
+            <div class="scroll">
+                <section id="app">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="comment">
+                                    <p v-for="items in item" v-text="items"></p>
+                                </div>
+                                <!--End Comment-->
+                            </div>
+                            <!--End col -->
+                        </div>
+                        <!-- End row -->
+                        <div class="row">
+                            <div class="col-6">
+                                <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                                <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                            </div>
+                            <!-- End col -->
+                        </div>
+                        <!--End Row -->
+                    </div>
+                    <!--End Container -->
+                </section>
+                <!-- end App -->
+            </div>
+        </div>
+        <br>
+        <hr size="5px" color="blue">
+        <br>
+        <div>
+            <h2>Wednesday </h2>
+            <input type="text">
+            <div class="scroll">
+                <section id="app">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="comment">
+                                    <p v-for="items in item" v-text="items"></p>
+                                </div>
+                                <!--End Comment-->
+                            </div>
+                            <!--End col -->
+                        </div>
+                        <!-- End row -->
+                        <div class="row">
+                            <div class="col-6">
+                                <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                                <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                            </div>
+                            <!-- End col -->
+                        </div>
+                        <!--End Row -->
+                    </div>
+                    <!--End Container -->
+                </section>
+                <!-- end App -->
+            </div>
+            <div>Scrum</div>
+            <div class="scroll">
+                <section id="app">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="comment">
+                                    <p v-for="items in item" v-text="items"></p>
+                                </div>
+                                <!--End Comment-->
+                            </div>
+                            <!--End col -->
+                        </div>
+                        <!-- End row -->
+                        <div class="row">
+                            <div class="col-6">
+                                <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                                <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                            </div>
+                            <!-- End col -->
+                        </div>
+                        <!--End Row -->
+                    </div>
+                    <!--End Container -->
+                </section>
+                <!-- end App -->
+            </div>
+            <div>DSA</div>
+            <input type="text">
+            <div class="scroll">
+                <section id="app">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="comment">
+                                    <p v-for="items in item" v-text="items"></p>
+                                </div>
+                                <!--End Comment-->
+                            </div>
+                            <!--End col -->
+                        </div>
+                        <!-- End row -->
+                        <div class="row">
+                            <div class="col-6">
+                                <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                                <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                            </div>
+                            <!-- End col -->
+                        </div>
+                        <!--End Row -->
+                    </div>
+                    <!--End Container -->
+                </section>
+                <!-- end App -->
+            </div>
+            <div>Skillathon</div>
+            <input type="text">
+            <div class="scroll">
+                <section id="app">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="comment">
+                                    <p v-for="items in item" v-text="items"></p>
+                                </div>
+                                <!--End Comment-->
+                            </div>
+                            <!--End col -->
+                        </div>
+                        <!-- End row -->
+                        <div class="row">
+                            <div class="col-6">
+                                <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                                <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                            </div>
+                            <!-- End col -->
+                        </div>
+                        <!--End Row -->
+                    </div>
+                    <!--End Container -->
+                </section>
+                <!-- end App -->
+            </div>
+            <div>Html-css</div>
+            <input type="text">
+            <div class="scroll">
+                <section id="app">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="comment">
+                                    <p v-for="items in item" v-text="items"></p>
+                                </div>
+                                <!--End Comment-->
+                            </div>
+                            <!--End col -->
+                        </div>
+                        <!-- End row -->
+                        <div class="row">
+                            <div class="col-6">
+                                <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                                <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                            </div>
+                            <!-- End col -->
+                        </div>
+                        <!--End Row -->
+                    </div>
+                    <!--End Container -->
+                </section>
+                <!-- end App -->
+            </div>
+            <div>External</div>
+            <input type="text">
+            <div class="scroll">
+                <section id="app">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="comment">
+                                    <p v-for="items in item" v-text="items"></p>
+                                </div>
+                                <!--End Comment-->
+                            </div>
+                            <!--End col -->
+                        </div>
+                        <!-- End row -->
+                        <div class="row">
+                            <div class="col-6">
+                                <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                                <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                            </div>
+                            <!-- End col -->
+                        </div>
+                        <!--End Row -->
+                    </div>
+                    <!--End Container -->
+                </section>
+                <!-- end App -->
+            </div>
+            <div>Stand-ups</div>
+            <input type="text">
+            <div class="scroll">
+                <section id="app">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="comment">
+                                    <p v-for="items in item" v-text="items"></p>
+                                </div>
+                                <!--End Comment-->
+                            </div>
+                            <!--End col -->
+                        </div>
+                        <!-- End row -->
+                        <div class="row">
+                            <div class="col-6">
+                                <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                                <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                            </div>
+                            <!-- End col -->
+                        </div>
+                        <!--End Row -->
+                    </div>
+                    <!--End Container -->
+                </section>
+                <!-- end App -->
+            </div>
+        </div>
+        <br>
+        <hr size="5px" color="blue">
+        <br>
+        <div>
+            <h2> Thursday</h2>
+            <input type="text">
+            <div class="scroll">
+                <section id="app">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="comment">
+                                    <p v-for="items in item" v-text="items"></p>
+                                </div>
+                                <!--End Comment-->
+                            </div>
+                            <!--End col -->
+                        </div>
+                        <!-- End row -->
+                        <div class="row">
+                            <div class="col-6">
+                                <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                                <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                            </div>
+                            <!-- End col -->
+                        </div>
+                        <!--End Row -->
+                    </div>
+                    <!--End Container -->
+                </section>
+                <!-- end App -->
+            </div>
+            <div>Scrum</div>
+            <div class="scroll">
+                <section id="app">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="comment">
+                                    <p v-for="items in item" v-text="items"></p>
+                                </div>
+                                <!--End Comment-->
+                            </div>
+                            <!--End col -->
+                        </div>
+                        <!-- End row -->
+                        <div class="row">
+                            <div class="col-6">
+                                <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                                <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                            </div>
+                            <!-- End col -->
+                        </div>
+                        <!--End Row -->
+                    </div>
+                    <!--End Container -->
+                </section>
+                <!-- end App -->
+            </div>
+            <div>DSA</div>
+            <input type="text">
+            <div class="scroll">
+                <section id="app">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="comment">
+                                    <p v-for="items in item" v-text="items"></p>
+                                </div>
+                                <!--End Comment-->
+                            </div>
+                            <!--End col -->
+                        </div>
+                        <!-- End row -->
+                        <div class="row">
+                            <div class="col-6">
+                                <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                                <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                            </div>
+                            <!-- End col -->
+                        </div>
+                        <!--End Row -->
+                    </div>
+                    <!--End Container -->
+                </section>
+                <!-- end App -->
+            </div>
+            <div>Skillathon</div>
+            <input type="text">
+            <div class="scroll">
+                <section id="app">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="comment">
+                                    <p v-for="items in item" v-text="items"></p>
+                                </div>
+                                <!--End Comment-->
+                            </div>
+                            <!--End col -->
+                        </div>
+                        <!-- End row -->
+                        <div class="row">
+                            <div class="col-6">
+                                <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                                <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                            </div>
+                            <!-- End col -->
+                        </div>
+                        <!--End Row -->
+                    </div>
+                    <!--End Container -->
+                </section>
+                <!-- end App -->
+            </div>
+            <div>Html-css</div>
+            <input type="text">
+            <div class="scroll">
+                <section id="app">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="comment">
+                                    <p v-for="items in item" v-text="items"></p>
+                                </div>
+                                <!--End Comment-->
+                            </div>
+                            <!--End col -->
+                        </div>
+                        <!-- End row -->
+                        <div class="row">
+                            <div class="col-6">
+                                <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                                <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                            </div>
+                            <!-- End col -->
+                        </div>
+                        <!--End Row -->
+                    </div>
+                    <!--End Container -->
+                </section>
+                <!-- end App -->
+            </div>
+            <div>External</div>
+            <input type="text">
+            <div class="scroll">
+                <section id="app">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="comment">
+                                    <p v-for="items in item" v-text="items"></p>
+                                </div>
+                                <!--End Comment-->
+                            </div>
+                            <!--End col -->
+                        </div>
+                        <!-- End row -->
+                        <div class="row">
+                            <div class="col-6">
+                                <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                                <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                            </div>
+                            <!-- End col -->
+                        </div>
+                        <!--End Row -->
+                    </div>
+                    <!--End Container -->
+                </section>
+                <!-- end App -->
+            </div>
+            <div>Stand-ups</div>
+            <input type="text">
+            <div class="scroll">
+                <section id="app">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="comment">
+                                    <p v-for="items in item" v-text="items"></p>
+                                </div>
+                                <!--End Comment-->
+                            </div>
+                            <!--End col -->
+                        </div>
+                        <!-- End row -->
+                        <div class="row">
+                            <div class="col-6">
+                                <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                                <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                            </div>
+                            <!-- End col -->
+                        </div>
+                        <!--End Row -->
+                    </div>
+                    <!--End Container -->
+                </section>
+                <!-- end App -->
+            </div>
+        </div>
+        <br>
+        <hr size="5px" color="blue">
+        <br>
+        <div>
+            <h2>Friday</h2>
+            <input type="text">
+            <div class="scroll">
+                <section id="app">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="comment">
+                                    <p v-for="items in item" v-text="items"></p>
+                                </div>
+                                <!--End Comment-->
+                            </div>
+                            <!--End col -->
+                        </div>
+                        <!-- End row -->
+                        <div class="row">
+                            <div class="col-6">
+                                <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                                <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                            </div>
+                            <!-- End col -->
+                        </div>
+                        <!--End Row -->
+                    </div>
+                    <!--End Container -->
+                </section>
+                <!-- end App -->
+            </div>
+            <div>Scrum</div>
+            <div class="scroll">
+                <section id="app">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="comment">
+                                    <p v-for="items in item" v-text="items"></p>
+                                </div>
+                                <!--End Comment-->
+                            </div>
+                            <!--End col -->
+                        </div>
+                        <!-- End row -->
+                        <div class="row">
+                            <div class="col-6">
+                                <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                                <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                            </div>
+                            <!-- End col -->
+                        </div>
+                        <!--End Row -->
+                    </div>
+                    <!--End Container -->
+                </section>
+                <!-- end App -->
+            </div>
+            <div>DSA</div>
+            <input type="text">
+            <div class="scroll">
+                <section id="app">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="comment">
+                                    <p v-for="items in item" v-text="items"></p>
+                                </div>
+                                <!--End Comment-->
+                            </div>
+                            <!--End col -->
+                        </div>
+                        <!-- End row -->
+                        <div class="row">
+                            <div class="col-6">
+                                <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                                <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                            </div>
+                            <!-- End col -->
+                        </div>
+                        <!--End Row -->
+                    </div>
+                    <!--End Container -->
+                </section>
+                <!-- end App -->
+            </div>
+            <div>Skillathon</div>
+            <input type="text">
+            <div class="scroll">
+                <section id="app">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="comment">
+                                    <p v-for="items in item" v-text="items"></p>
+                                </div>
+                                <!--End Comment-->
+                            </div>
+                            <!--End col -->
+                        </div>
+                        <!-- End row -->
+                        <div class="row">
+                            <div class="col-6">
+                                <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                                <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                            </div>
+                            <!-- End col -->
+                        </div>
+                        <!--End Row -->
+                    </div>
+                    <!--End Container -->
+                </section>
+                <!-- end App -->
+            </div>
+            <div>Html-css</div>
+            <input type="text">
+            <div class="scroll">
+                <section id="app">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="comment">
+                                    <p v-for="items in item" v-text="items"></p>
+                                </div>
+                                <!--End Comment-->
+                            </div>
+                            <!--End col -->
+                        </div>
+                        <!-- End row -->
+                        <div class="row">
+                            <div class="col-6">
+                                <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                                <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                            </div>
+                            <!-- End col -->
+                        </div>
+                        <!--End Row -->
+                    </div>
+                    <!--End Container -->
+                </section>
+                <!-- end App -->
+            </div>
+            <div>External</div>
+            <input type="text">
+            <div class="scroll">
+                <section id="app">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="comment">
+                                    <p v-for="items in item" v-text="items"></p>
+                                </div>
+                                <!--End Comment-->
+                            </div>
+                            <!--End col -->
+                        </div>
+                        <!-- End row -->
+                        <div class="row">
+                            <div class="col-6">
+                                <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                                <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                            </div>
+                            <!-- End col -->
+                        </div>
+                        <!--End Row -->
+                    </div>
+                    <!--End Container -->
+                </section>
+                <!-- end App -->
+            </div>
+            <div>Stand-ups</div>
+            <input type="text">
+            <div class="scroll">
+                <section id="app">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="comment">
+                                    <p v-for="items in item" v-text="items"></p>
+                                </div>
+                                <!--End Comment-->
+                            </div>
+                            <!--End col -->
+                        </div>
+                        <!-- End row -->
+                        <div class="row">
+                            <div class="col-6">
+                                <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                                <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                            </div>
+                            <!-- End col -->
+                        </div>
+                        <!--End Row -->
+                    </div>
+                    <!--End Container -->
+                </section>
+                <!-- end App -->
+            </div>
+        </div>
+        <br>
+        <hr size="5px" color="blue">
+        <br>
+        <div>
+            <h2>Saturday</h2>
+            <input type="text">
+            <div class="scroll">
+                <section id="app">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="comment">
+                                    <p v-for="items in item" v-text="items"></p>
+                                </div>
+                                <!--End Comment-->
+                            </div>
+                            <!--End col -->
+                        </div>
+                        <!-- End row -->
+                        <div class="row">
+                            <div class="col-6">
+                                <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                                <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                            </div>
+                            <!-- End col -->
+                        </div>
+                        <!--End Row -->
+                    </div>
+                    <!--End Container -->
+                </section>
+                <!-- end App -->
+            </div>
+            <div>Scrum</div>
+            <div class="scroll">
+                <section id="app">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="comment">
+                                    <p v-for="items in item" v-text="items"></p>
+                                </div>
+                                <!--End Comment-->
+                            </div>
+                            <!--End col -->
+                        </div>
+                        <!-- End row -->
+                        <div class="row">
+                            <div class="col-6">
+                                <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                                <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                            </div>
+                            <!-- End col -->
+                        </div>
+                        <!--End Row -->
+                    </div>
+                    <!--End Container -->
+                </section>
+                <!-- end App -->
+            </div>
+            <div>DSA</div>
+            <input type="text">
+            <div class="scroll">
+                <section id="app">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="comment">
+                                    <p v-for="items in item" v-text="items"></p>
+                                </div>
+                                <!--End Comment-->
+                            </div>
+                            <!--End col -->
+                        </div>
+                        <!-- End row -->
+                        <div class="row">
+                            <div class="col-6">
+                                <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                                <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                            </div>
+                            <!-- End col -->
+                        </div>
+                        <!--End Row -->
+                    </div>
+                    <!--End Container -->
+                </section>
+                <!-- end App -->
+            </div>
+            <div>Skillathon</div>
+            <input type="text">
+            <div class="scroll">
+                <section id="app">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="comment">
+                                    <p v-for="items in item" v-text="items"></p>
+                                </div>
+                                <!--End Comment-->
+                            </div>
+                            <!--End col -->
+                        </div>
+                        <!-- End row -->
+                        <div class="row">
+                            <div class="col-6">
+                                <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                                <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                            </div>
+                            <!-- End col -->
+                        </div>
+                        <!--End Row -->
+                    </div>
+                    <!--End Container -->
+                </section>
+                <!-- end App -->
+            </div>
+            <div>Html-css</div>
+            <input type="text">
+            <div class="scroll">
+                <section id="app">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="comment">
+                                    <p v-for="items in item" v-text="items"></p>
+                                </div>
+                                <!--End Comment-->
+                            </div>
+                            <!--End col -->
+                        </div>
+                        <!-- End row -->
+                        <div class="row">
+                            <div class="col-6">
+                                <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                                <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                            </div>
+                            <!-- End col -->
+                        </div>
+                        <!--End Row -->
+                    </div>
+                    <!--End Container -->
+                </section>
+                <!-- end App -->
+            </div>
+            <div>External</div>
+            <input type="text">
+            <div class="scroll">
+                <section id="app">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="comment">
+                                    <p v-for="items in item" v-text="items"></p>
+                                </div>
+                                <!--End Comment-->
+                            </div>
+                            <!--End col -->
+                        </div>
+                        <!-- End row -->
+                        <div class="row">
+                            <div class="col-6">
+                                <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                                <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                            </div>
+                            <!-- End col -->
+                        </div>
+                        <!--End Row -->
+                    </div>
+                    <!--End Container -->
+                </section>
+                <!-- end App -->
+            </div>
+            <div>Stand-ups</div>
+            <input type="text">
+            <div class="scroll">
+                <section id="app">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="comment">
+                                    <p v-for="items in item" v-text="items"></p>
+                                </div>
+                                <!--End Comment-->
+                            </div>
+                            <!--End col -->
+                        </div>
+                        <!-- End row -->
+                        <div class="row">
+                            <div class="col-6">
+                                <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                                <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                            </div>
+                            <!-- End col -->
+                        </div>
+                        <!--End Row -->
+                    </div>
+                    <!--End Container -->
+                </section>
+                <!-- end App -->
+            </div>
+        </div>
+        <br>
+        <hr size="5px" color="blue">
+        <br>
+        <div>
+            <h2>Sunday</h2>
+            <input type="text">
+            <div class="scroll">
+                <section id="app">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="comment">
+                                    <p v-for="items in item" v-text="items"></p>
+                                </div>
+                                <!--End Comment-->
+                            </div>
+                            <!--End col -->
+                        </div>
+                        <!-- End row -->
+                        <div class="row">
+                            <div class="col-6">
+                                <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                                <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                            </div>
+                            <!-- End col -->
+                        </div>
+                        <!--End Row -->
+                    </div>
+                    <!--End Container -->
+                </section>
+                <!-- end App -->
+            </div>
+            <div>Scrum</div>
+            <div class="scroll">
+                <section id="app">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="comment">
+                                    <p v-for="items in item" v-text="items"></p>
+                                </div>
+                                <!--End Comment-->
+                            </div>
+                            <!--End col -->
+                        </div>
+                        <!-- End row -->
+                        <div class="row">
+                            <div class="col-6">
+                                <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                                <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                            </div>
+                            <!-- End col -->
+                        </div>
+                        <!--End Row -->
+                    </div>
+                    <!--End Container -->
+                </section>
+                <!-- end App -->
+            </div>
+            <div>DSA</div>
+            <input type="text">
+            <div class="scroll">
+                <section id="app">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="comment">
+                                    <p v-for="items in item" v-text="items"></p>
+                                </div>
+                                <!--End Comment-->
+                            </div>
+                            <!--End col -->
+                        </div>
+                        <!-- End row -->
+                        <div class="row">
+                            <div class="col-6">
+                                <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                                <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                            </div>
+                            <!-- End col -->
+                        </div>
+                        <!--End Row -->
+                    </div>
+                    <!--End Container -->
+                </section>
+                <!-- end App -->
+            </div>
+            <div>Skillathon</div>
+            <input type="text">
+            <div class="scroll">
+                <section id="app">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="comment">
+                                    <p v-for="items in item" v-text="items"></p>
+                                </div>
+                                <!--End Comment-->
+                            </div>
+                            <!--End col -->
+                        </div>
+                        <!-- End row -->
+                        <div class="row">
+                            <div class="col-6">
+                                <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                                <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                            </div>
+                            <!-- End col -->
+                        </div>
+                        <!--End Row -->
+                    </div>
+                    <!--End Container -->
+                </section>
+                <!-- end App -->
+            </div>
+            <div>Html-css</div>
+            <input type="text">
+            <div class="scroll">
+                <section id="app">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="comment">
+                                    <p v-for="items in item" v-text="items"></p>
+                                </div>
+                                <!--End Comment-->
+                            </div>
+                            <!--End col -->
+                        </div>
+                        <!-- End row -->
+                        <div class="row">
+                            <div class="col-6">
+                                <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                                <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                            </div>
+                            <!-- End col -->
+                        </div>
+                        <!--End Row -->
+                    </div>
+                    <!--End Container -->
+                </section>
+                <!-- end App -->
+            </div>
+            <div>External</div>
+            <input type="text">
+            <div class="scroll">
+                <section id="app">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="comment">
+                                    <p v-for="items in item" v-text="items"></p>
+                                </div>
+                                <!--End Comment-->
+                            </div>
+                            <!--End col -->
+                        </div>
+                        <!-- End row -->
+                        <div class="row">
+                            <div class="col-6">
+                                <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                                <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                            </div>
+                            <!-- End col -->
+                        </div>
+                        <!--End Row -->
+                    </div>
+                    <!--End Container -->
+                </section>
+                <!-- end App -->
+            </div>
+            <div>Stand-ups</div>
+            <input type="text">
+            <div class="scroll">
+                <section id="app">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="comment">
+                                    <p v-for="items in item" v-text="items"></p>
+                                </div>
+                                <!--End Comment-->
+                            </div>
+                            <!--End col -->
+                        </div>
+                        <!-- End row -->
+                        <div class="row">
+                            <div class="col-6">
+                                <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                                <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                            </div>
+                            <!-- End col -->
+                        </div>
+                        <!--End Row -->
+                    </div>
+                    <!--End Container -->
+                </section>
+                <!-- end App -->
+            </div>
+        </div>
+    </div>
+    </div>
+    <br>
+    <hr size="5px" color="blue">
+    <br>
+
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<html>
+
+<head>
+    <title>
+        DOM 2
+    </title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        h1,
+        p {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Let's Start</h1>
+
+</body>
+
+<script>
+    var h1 = document.getElementById("head");
+
+    console.log(h1);
+
+    var arr = document.getElementsByClassName("head-2");
+    console.log(arr);
+    arr.array.forEach(element => {
+        console.log(element)
+    });
+</script>
+
+</html>
+
+
+
+// tag names
+
+
+
+<script>
+    var para = document.getElementsByTagName("p")
+    console.log(para);
+
+    var head1 = document.getElementsByTagName("h1")
+    console.log(head1);
+
+    var div = document.getElementById("box")
+    console.log(div);
+
+    var heading1 = document.getElementsByClassName("head-1");
+    console.log(heading);
+
+
+    var para = document.getElementsByTagName("p");
+    console.log(para);
+
+    var divNew = document.querySelector("box")
+    console.log(divNew)
+
+    var heading1 = document.querySelector(".head-1");
+    console.log(heading1);
+
+    //tagname
+    var para = document.querySelector("p")
+    console.log(para);
+</script>
+
+
+//combinators
+<style>
+
+</style>
+<script>
+    var x = document.querySelector("div+h3")
+    console.log(x)
+</script>
+
+
+
+//events button and click
+
+<script>
+    function myFunction() {
+        console.log("someone cliced me")
+    }
+
+
+    //hover effect using java scripts
+
+
+    document.querySelector("div").andEventListener("mouseenter", changBg)
+
+    function chageBg() {
+        document.querySelector("div").style.backgroundColor = "red";
+    }
+</script>
