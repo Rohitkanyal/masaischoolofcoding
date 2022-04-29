@@ -1,8 +1,28 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charm&family=Itim&family=Mali:wght@200&family=Sriracha&display=swap" rel="stylesheet"> -->
+
+
+
+    <link rel="icon" href="favicon.ico">
     <title>Time-Table</title>
     <style>
+        body {
+            /* font-family: 'Tangerine', serif; */
+            background-color: #BCCC9A;
+        }
+        
+        body>div>input {
+            background-color: #006E7F;
+        }
+        
         #container {
             border: 2px;
             height: 500px;
@@ -16,6 +36,20 @@
             padding: auto;
         }
         
+        textarea {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: xx-large;
+            background-color: #006E7F;
+        }
+        
+        button {
+            color: blue;
+            background-color: #9900F0;
+            display: flexbox;
+            background: 50%;
+            border-radius: 50%;
+        }
+        
         .time {
             text-align: center;
             text-shadow: 2px;
@@ -27,7 +61,7 @@
         
         h1 {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif0;
-            font-display: red;
+            background-color: #006E7F;
             padding-bottom: 20px;
         }
         
@@ -35,7 +69,9 @@
             padding-bottom: 15px;
         }
         
-        .scroll {}
+        .highlighted1 {
+            color: #9900F0;
+        }
     </style>
 </head>
 
@@ -45,7 +81,11 @@
         <p>Here I Create my time-table of masai shcool of coding for unit-2 </p>
     </div>
     <div class="time">
-        <h2>Monday</h2>
+        <div id="Monday" class="day1">
+            <h2> Monday</h2>
+            <h3>Rohit Kanyal</h3>
+        </div>
+        <!-- <h2>Monday</h2> -->
         <input type="text">
         <div class="scroll">
             <section id="app">
@@ -201,7 +241,7 @@
                     <!-- End row -->
                     <div class="row">
                         <div class="col-6">
-                            <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                            <textarea type="text" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
                             <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
                         </div>
                         <!-- End col -->
@@ -246,7 +286,11 @@
     <br>
     <div class="time">
         <div>
-            <h2> Tuesday</h2>
+            <div id="Tuesday" class="day2">
+                <h2> Tuesday</h2>
+                <h3>Rohit Kanyal</h3>
+            </div>
+            <!-- <h2> Tuesday</h2> -->
             <input type="text">
             <div class="scroll">
                 <section id="app">
@@ -446,7 +490,11 @@
         <hr size="5px" color="blue">
         <br>
         <div>
-            <h2>Wednesday </h2>
+            <div id="Wednesday" class="day3">
+                <h2> Wednesday</h2>
+                <h3>Rohit Kanyal</h3>
+            </div>
+            <!-- <h2>Wednesday </h2> -->
             <input type="text">
             <div class="scroll">
                 <section id="app">
@@ -646,7 +694,11 @@
         <hr size="5px" color="blue">
         <br>
         <div>
-            <h2> Thursday</h2>
+            <div id="Thursday" class="day4">
+                <h2> Thursday</h2>
+                <h3>Rohit Kanyal</h3>
+            </div>
+            <!-- <h2> Thursday</h2> -->
             <input type="text">
             <div class="scroll">
                 <section id="app">
@@ -846,7 +898,11 @@
         <hr size="5px" color="blue">
         <br>
         <div>
-            <h2>Friday</h2>
+            <div id="Friday" class="day5">
+                <h2> Friday</h2>
+                <h3>Rohit Kanyal</h3>
+            </div>
+            <!-- <h2>Friday</h2> -->
             <input type="text">
             <div class="scroll">
                 <section id="app">
@@ -1046,7 +1102,11 @@
         <hr size="5px" color="blue">
         <br>
         <div>
-            <h2>Saturday</h2>
+            <div id="Saturday" class="day6">
+                <h2> Saturday</h2>
+                <h3>Rohit Kanyal</h3>
+            </div>
+            <!-- <h2>Saturday</h2> -->
             <input type="text">
             <div class="scroll">
                 <section id="app">
@@ -1246,7 +1306,11 @@
         <hr size="5px" color="blue">
         <br>
         <div>
-            <h2>Sunday</h2>
+            <div id="Sunday" class="day7">
+                <h2> Sunday</h2>
+                <h3>Rohit Kanyal</h3>
+            </div>
+            <!-- <h2>Sunday</h2> -->
             <input type="text">
             <div class="scroll">
                 <section id="app">
@@ -1449,5 +1513,99 @@
     <br>
 
 </body>
+
+<script>
+    var day = (new Date()).getDay();
+    var ids = ['Sunday', 'Monday', 'Tuesday', 'Wednesday',
+        'Thursday', 'Friday', 'Saturday'
+    ];
+    var colours = ['#9900F0', '#243D25', '#062C30',
+        '#125C13', '#361500', '#FFD32D', '#F1D00A'
+    ];
+
+    document.getElementById(ids[day]).style.color = colours[day];
+</script>
+
+
+
+<!-- 
+<script language="javascript" type="text/javascript">
+    // var day = new Date().getDay();
+    // $(".day" + day + " h3").addClass("highlighted1");
+
+
+
+    var day = (new Date()).getDay();
+    var ids = ['Sunday', 'Monday', 'Tuesday', 'Wednesday',
+        'Thursday', 'Friday', 'Saturday'
+    ];
+    var colours = ['#DB35B0', '#DB35B0', '#DB35B0',
+        '#DB35B0', '#DB35B0', '#DB35B0', '#DB35B0'
+    ];
+
+    document.getElementById(ids[day]).style.color = colours[day];
+</script> -->
+
+<!-- <script>
+    var count = 0;
+    var obj = {
+        "Monday": 1,
+        "Tuesday": 2,
+        "Wednesday": 3,
+        "Thursday": 4,
+        "Friday": 5,
+        "Saturday": 6,
+        "Sunday": 0
+    }
+
+    for (var k in obj) {
+        if (day == k) {
+            var sum = N + obj[k];
+            sum = sum % 7;
+        }
+    }
+    for (var k in obj) {
+        if (sum == obj[k]) {
+
+            console.log(k);
+        }
+    }
+
+    }
+</script> -->
+
+
+<!-- <style>
+    
+</style> -->
+<!-- <div id="Monday" class="day1">
+    <h2> Monday</h2>
+    <h3>Rohit Kanyal</h3>
+</div>
+<div id="Tuesday" class="day2">
+    <h2> Tuesday</h2>
+    <h3>Rohit Kanyal</h3>
+</div>
+<div id="Wednesday" class="day3">
+    <h2> Wednesday</h2>
+    <h3>Rohit Kanyal</h3>
+</div>
+<div id="Thursday" class="day4">
+    <h2> Thursday</h2>
+    <h3>Rohit Kanyal</h3>
+</div>
+<div id="Friday" class="day5">
+    <h2> Friday</h2>
+    <h3>Rohit Kanyal</h3>
+</div>
+<div id="Saturday" class="day6">
+    <h2> Saturday</h2>
+    <h3>Rohit Kanyal</h3>
+</div>
+<div id="Sunday" class="day7">
+    <h2> Sunday</h2>
+    <h3>Rohit Kanyal</h3>
+</div> -->
+
 
 </html>
