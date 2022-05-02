@@ -15,6 +15,7 @@ function runProgram(input) {
 
 function masaiEvenOrOdd(input) {
     //write logic here
+
     if (input % 2 == 0) {
         console.log("Even")
     } else {
