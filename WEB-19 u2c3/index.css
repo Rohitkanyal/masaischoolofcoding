@@ -1,0 +1,26 @@
+/* Fill CSS here */
+
+body>h1 {
+    text-align: center;
+    color: blue;
+    text-decoration-line: underline;
+}
+
+body>div {
+    display: flex;
+}
+
+body>div>table {
+    margin-left: 35%;
+}
+
+form :nth-last-child(-1) {
+    background-color: blue;
+    color: beige;
+}
+
+table>thead>tr {
+    background-color: blue;
+    color: blanchedalmond;
+    justify-content: end;
+}
